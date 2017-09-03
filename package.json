@@ -1,35 +1,34 @@
 {
-  "name": "gulp-less-pug",
+  "name": "gulp-sass-pug",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Gulp starter for psd2html conversion using sass and pug and bootstrap4 beta",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "daniiltserin <daniilborowkow@ya.ru>",
-  "license": "ISC",
+  "author": "daniiltserin",
+  "license": "MIT",
   "dependencies": {
-    "babel": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
-    "bootstrap": "4.0.0-alpha.2",
-    "browser-sync": "^2.18.13",
-    "font-awesome": "^4.7.0",
+    "bootstrap": "4.0.0-beta",
     "fontawesome": "^4.7.2",
+    "jquery": "^3.2.1",
+    "popper.js": "1.11.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.6.0",
     "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.3.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^3.0.0",
     "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-watch": "^4.3.11",
-    "jquery": "^3.2.1",
     "pug": "^2.0.0-rc.2"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "cheerio": "^1.0.0-rc.2",
-    "handlebars": "^4.0.10",
-    "htmlparser": "^1.7.7"
   }
 }
