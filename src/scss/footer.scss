@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 3rem !important;
+    img.svg {
+        width: 40px;
+    }
+    .carousel {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            li {
+                list-style-type: none;
+                padding: 5px;
+                p,
+                a {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    .footer-bottom-blue {
+        background: $footer-blue;
+        padding: 1rem;
+        p,
+        a,
+        i,
+        div {
+            color: #fff;
+        }
+        a.mail {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}
