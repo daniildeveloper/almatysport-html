@@ -1,0 +1,54 @@
+.news.row
+  .col-sm-6.news__news
+    h3.news__news-header.content-header Новости
+      span.news__news-header__all-news-link
+        a(href="#") все новости
+    .news__news__content
+
+      //- news slider
+      //- todo: slide news as bootstrap carousel
+      .news__news__content__slider
+        a(href="#").news__news__content__slider__slide
+          .news__news__content__slider__slide__date 23 января 2017
+          .news__news__content__slider__slide__title Сборная Казахстана заселилась в атлетическую деревню
+        .news__news__content__slider__cruds
+      //- end news slider
+
+      //- news additional previews
+      .news__news__content__news
+        - var a = 0
+        while a < 1
+          .news__news__content__news__item
+            .news__news__content__news__item__date.row
+              .col-xs-auto 20 февраля 2017
+              .col-xs-auto
+                i.fa.fa-eye
+                | 113
+              .col-xs-auto
+                a(href="#") Читать статью
+            .news__news__content__news__item__content
+              img(src="img/news2.jpg", alt="")
+              .news__news__content__news__item__content__text В Алматы стартовали игры второго этапа студенческой лиги республики Казахстан по баскетболу среди мужских и женских команд сезона 2016/2017
+      //- end news additional previews
+  .col-sm-6
+    //- interview
+    .col-sm-6.interview
+      h3.content-header Интервью
+      img(src="img/video-prev.jpg", alt="")
+      img(src="img/video-prev.jpg", alt="")
+      //- todo: twitter widget here
+      img(src="img/twitter.jpg", alt="")
+    //- interview
+
+    //- leaders
+    .col-sm-6.leaders
+      h3.content-header Руководство
+      - var leaders = ['Имя Фамилия', "Имя Фамилия"]
+      each leader in leaders
+        a(href="#").leaders__leader
+          img(src="img/morda.jpg", alt="")
+          p= leader
+    //- end leaders
+
+    //- todo: calendar
+
