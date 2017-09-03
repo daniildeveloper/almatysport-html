@@ -1,7 +1,7 @@
 {
-  "name": "gulp-sass-pug",
+  "name": "Egov html template",
   "version": "1.0.0",
-  "description": "Gulp starter for psd2html conversion using sass and pug and bootstrap4 beta",
+  "description": "Egov html template sources.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
