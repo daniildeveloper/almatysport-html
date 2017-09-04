@@ -1,17 +1,17 @@
 //- second screen row with news and faces
 .section.row
-  .col-sm-8.news-slider
-    .col-sm-7.news-slider__preview
+  .col-sm-8.news-slider.row
+    .col-sm-8.news-slider__preview
       img(src="img/ball.png", alt="")
-    .col-sm-5.news-slider__content
+    .col-sm-4.news-slider__content
       - var n = 0
       while n < 12
         .news-slider__content__item(id="i"+n++)
-          h5.news-slider__content__item__date 24 февраля 2017
+          p.news-slider__content__item__date 24 февраля 2017
           p Крупнейшая индийская компания Jaypee Group заинтересована в сотрудничестве с Алматы
   
   //- projects and faces
-  .col-sm-4.projects-and-faces
+  .col-sm-4.projects-and-faces.row
     .col-sm-6.projects
       h4 Наши проекты
       - var p = 0
@@ -27,8 +27,8 @@
         p Никита Азаров
       .row.arrows
         a.left(href="#")
-          img(src="img/left-arrow.swg", alt="")
+          img(src="img/left-arrow.svg", alt="")
         a.right(href="#")
-          img(src="img/right-arrow.swg", alt="")
+          img(src="img/right-arrow.svg", alt="")
   //- end projects and faces
     

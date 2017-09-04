@@ -1,6 +1,25 @@
 $blue: #0092FA;
 $footer-blue: #fff;
+$gray-scroll: #969696;
+* {
+    font-size: 14px;
+}
 
-*{
-  font-size: 14px;
+@mixin scrollbar {
+    &::-webkit-scrollbar {
+        width: 4px !important;
+    }
+    &::-webkit-scrollbar-track {
+        background: #E9E9E9 !important;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $gray-scroll !important;
+        ;
+    }
+}
+
+@mixin no-scrollbar-on-small{
+    @media screen and (max-width: 560px) {
+        overflow: hidden;
+    }
 }

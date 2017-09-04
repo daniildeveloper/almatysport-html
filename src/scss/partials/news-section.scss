@@ -1,0 +1,65 @@
+.news-slider {
+    .news-slider__preview {
+        // padding-left: 0px;
+        img {}
+    }
+    .news-slider__content {
+        overflow-y: scroll;
+        height: 300px;
+        @include scrollbar;
+        @include no-scrollbar-on-small; .news-slider__content__item__date {
+            color: $blue;
+            padding-top: 4px;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.projects,
+.sportsmens {
+    text-align: center;
+    h4 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        color: #000000;
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+}
+
+.projects {
+    @include scrollbar;
+    overflow-y: scroll;
+    height: 300px;
+    text-align: center;
+    .projects__project {
+        img {
+            max-width: 70px;
+        }
+    }
+}
+
+.sportsmens {
+    padding-right: 0;
+    img {
+        border-radius: 15px;
+    }
+    .arrows {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            max-width: 20px;
+        }
+    }
+}
