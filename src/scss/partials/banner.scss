@@ -1,0 +1,16 @@
+.banner{
+  background: url('../img/banner.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 140px;
+  position: relative;
+  .banner-content{
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.2rem;
+    padding: 0.2rem 0.9rem;
+    background: rgba(255, 255, 255, 0.7);
+    white-space: 0px;
+
+  }
+}

@@ -1,8 +1,9 @@
 nav.navbar{
   border-bottom: 2px solid $blue;
+  margin-bottom: 0.7rem;
 }
 ul.navbar-nav{
-  @media screen {
+  @media screen and (min-width: 560px) {
     padding-left: 10rem - 1rem;
   }
   li{
