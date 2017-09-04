@@ -1,0 +1,14 @@
+nav.navbar{
+  border-bottom: 2px solid $blue;
+}
+ul.navbar-nav{
+  @media screen {
+    padding-left: 10rem - 1rem;
+  }
+  li{
+    padding-left: 1rem;
+    a{
+      color: black;
+    }
+  }
+}
