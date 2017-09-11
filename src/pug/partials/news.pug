@@ -1,4 +1,4 @@
-.news.row
+.news.row.section
   .col-sm-6.news__news
     h3.news__news-header.content-header Новости
       span.news__news-header__all-news-link
@@ -17,23 +17,23 @@
       //- news additional previews
       .news__news__content__news
         - var a = 0
-        while a < 1
+        while a < 2
           .news__news__content__news__item(id="a"+a++)
             .news__news__content__news__item__date.row
               .col-xs-auto 20 февраля 2017
               .col-xs-auto
                 i.fa.fa-eye
-                | 113
+                |  113 
               .col-xs-auto
                 a(href="#") Читать статью
-            .news__news__content__news__item__content
-              img(src="img/news2.jpg", alt="")
-              .news__news__content__news__item__content__text В Алматы стартовали игры второго этапа студенческой лиги республики Казахстан по баскетболу среди мужских и женских команд сезона 2016/2017
+            .news__news__content__news__item__content.row
+              img(src="img/news2.jpg", alt="").col-sm-7
+              .news__news__content__news__item__content__text.col-sm-4 В Алматы стартовали игры второго этапа студенческой лиги республики Казахстан по баскетболу среди мужских и женских команд сезона 2016/2017
       //- end news additional previews
-  .col-sm-6
+  .col-sm-6.row
     //- interview
     .col-sm-6.interview
-      h3.content-header Интервью
+      h3.content-header.interview__header Интервью
       img(src="img/video-prev.jpg", alt="")
       img(src="img/video-prev.jpg", alt="")
       //- todo: twitter widget here
@@ -46,7 +46,8 @@
       - var leaders = ['Имя Фамилия', "Имя Фамилия"]
       each leader in leaders
         a(href="#").leaders__leader
-          img(src="img/morda.jpg", alt="")
+          .img-wrapper
+            img(src="img/morda.jpg", alt="")
           p= leader
     //- end leaders
 

@@ -1,0 +1,128 @@
+.news {
+    h3 {
+        margin-top: 0.3rem;
+        margin-bottom: 2rem;
+        text-transform: unset;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .news__news {
+        .news__news-header {
+            padding-left: .8em;
+            letter-spacing: 0.1px;
+            &::before {
+                content: '\f1ea';
+                font-family: 'FontAwesome';
+                color: black;
+                margin-right: 0.5rem;
+            }
+            .news__news-header__all-news-link {
+                a {
+                    color: #000;
+                    text-decoration: underline;
+                    margin-left: 1rem;
+                }
+            }
+        }
+        .news__news__content {
+            .news__news__content__slider {
+                height: 220px;
+                background: url('../img/news-big.jpg') no-repeat;
+                background-size: cover;
+                .news__news__content__slider__slide {
+                    position: relative;
+                    background-color: $bordo-transparent;
+                    width: 100%;
+                    height: 220px;
+                    z-index: 999;
+                    .news__news__content__slider__slide__date {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        min-width: 120px;
+                        color: #fff;
+                        background: $bordo;
+                        padding-left: 20px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        font-size: 0.9rem;
+                    }
+                    .news__news__content__slider__slide__title {
+                        display: none;
+                        position: absolute;
+                        bottom: -5rem;
+                        ;
+                        left: 0;
+                    }
+                }
+            }
+            .news__news__content__news {
+                margin-top: 3rem;
+                padding: 0 14px;
+                .news__news__content__news__item {
+                    margin-bottom: 2rem;
+                    .news__news__content__news__item__date {
+                        background: $bordo;
+                        width: fit-content;
+                        color: #fff;
+                        margin-left: 0px;
+                        margin-bottom: 0.6rem;
+                        border-radius: 5px 5px 0 0;
+                        padding: 3px 15px;
+                        a {
+                            color: #fff;
+                        }
+                        div,
+                        a {
+                            padding-right: 15px;
+                            font-size: 0.85rem;
+                        }
+                    }
+                    .news__news__content__news__item__content {
+                        padding-right: 0;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .news__news__content__news__item__content__text{
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-transform: uppercase;
+                            text-decoration: underline;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .interview {
+        .interview__header {
+            &::before {
+                content: '\f27b';
+                font-family: 'FontAwesome';
+                color: black;
+                margin-right: 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+        img {
+            margin-bottom: 2rem;
+        }
+    }
+    .leaders {
+        text-align: center;
+        a.leaders__leader {
+            // border: 1px solid $gray-scroll;
+            // padding: 20px 10px;
+            height: fit-content;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            p {
+                color: #000;
+            }
+        }
+    }
+}
