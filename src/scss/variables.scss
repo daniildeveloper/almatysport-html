@@ -1,5 +1,5 @@
 $blue: #0092FA;
-$footer-blue: #fff;
+$footer-blue: #50C0F1;
 $gray-scroll: #969696;
 $bordo: #162841;
 $bordo-transparent: rgba(22, 40, 66, 1);
@@ -20,7 +20,7 @@ $bordo-transparent: rgba(22, 40, 66, 1);
     }
 }
 
-@mixin no-scrollbar-on-small{
+@mixin no-scrollbar-on-small {
     @media screen and (max-width: 560px) {
         overflow: hidden;
     }
